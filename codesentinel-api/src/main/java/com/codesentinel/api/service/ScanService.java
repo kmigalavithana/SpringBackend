@@ -29,9 +29,19 @@ public class ScanService {
                         features
                 );
 
+        int confidence = 0;
+
+        if (prediction.equals("SQL Injection")) {
+            confidence = 95;
+        }
+        else if (prediction.equals("Certificate Validation")) {
+            confidence = 90;
+        }
+
         return new ScanResult(
                 prediction,
-                explanation
+                explanation,
+                confidence
         );
     }
 }

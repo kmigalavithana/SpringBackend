@@ -36,6 +36,9 @@ public class ScanController {
         response.setExplanation(
                 result.getExplanation()
         );
+        response.setConfidence(
+                result.getConfidence()
+        );
 
         return response;
     }

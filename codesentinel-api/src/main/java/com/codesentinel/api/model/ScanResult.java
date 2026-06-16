@@ -4,13 +4,16 @@ public class ScanResult {
 
     private String prediction;
     private String explanation;
+    private int confidence;
 
     public ScanResult(
             String prediction,
-            String explanation
+            String explanation,
+            int confidence
     ) {
         this.prediction = prediction;
         this.explanation = explanation;
+        this.confidence = confidence;
     }
 
     public String getPrediction() {
@@ -19,5 +22,9 @@ public class ScanResult {
 
     public String getExplanation() {
         return explanation;
+    }
+
+    public int getConfidence() {
+        return confidence;
     }
 }

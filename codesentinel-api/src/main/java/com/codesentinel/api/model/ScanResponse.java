@@ -5,6 +5,7 @@ public class ScanResponse {
     private boolean vulnerable;
     private String vulnerabilityType;
     private String explanation;
+    private int confidence;
 
     public ScanResponse() {
     }
@@ -32,4 +33,13 @@ public class ScanResponse {
     public void setExplanation(String explanation) {
         this.explanation = explanation;
     }
+
+    public int getConfidence() {
+        return confidence;
+    }
+
+    public void setConfidence(int confidence) {
+        this.confidence = confidence;
+    }
+
 }
